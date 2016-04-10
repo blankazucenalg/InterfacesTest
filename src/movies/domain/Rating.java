@@ -12,6 +12,16 @@ public class Rating implements Event {
     private Movie movie;
     private float rating;
 
+    public Rating(){
+
+    }
+
+    public Rating(Cinephile cinephile, Movie movie, float rating){
+        this.cinephile = cinephile;
+        this.movie = movie;
+        this.rating = rating;
+    }
+
     @Override
     public User getUser() {
         return this.cinephile;

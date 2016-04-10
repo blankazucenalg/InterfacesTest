@@ -14,6 +14,16 @@ public class Click implements Event {
     private Dish dish;
     private Date date;
 
+    public Click(){
+
+    }
+
+    public Click(Costumer costumer, Dish dish, Date date){
+        this.costumer = costumer;
+        this.dish = dish;
+        this.date = date;
+    }
+
     @Override
     public User getUser() {
         return this.costumer;

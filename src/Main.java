@@ -49,10 +49,7 @@ public class Main {
         cinephile.setId((long)1);
         cinephile.setName("Azucena Lopez");
 
-        Rating rating = new Rating();
-        rating.setItem(movie);
-        rating.setUser(cinephile);
-        rating.setValue((float)4.0);
+        Rating rating = new Rating(cinephile, movie, (float)4.0);
 
         System.out.println(getEventInfo(rating));
 
